@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validacija</title>
+	<script src="js/main.js"></script>
+	<style>
+	span {
+		color: red;
+		display: none;
+	}
+	</style>
+</head>
+<body>
+	<form>
+		<h1>Cofee Shop</h1>
+
+		<label for="tea">Br. cajeva</label>
+		<input type="text" id="tea" value="">
+		<span id="e_tea">Niste uneli broj cajeva propisno</span>
+		<br>
+
+		<label for="coffee">Br. kafa</label>
+		<input type="text" id="coffee">
+		<span id="e_coffee">Niste uneli broj kafa propisno</span>
+		<br>
+
+		<label for="kelner">Kelner</label>
+		<input type="text" id="kelner" placeholder="Unesi ime konobara">
+		<span id="e_kelner">Niste uneli ime konobara</span>
+		<br>
+
+		<label for="email">Email</label>
+		<input type="text" id="email" placeholder="Unesi email">
+		<span id="e_email">Niste uneli ispgavan email</span>
+		<br>
+
+
+		<label for="password">Password</label>
+		<input type="password" id="password" placeholder="Unesi password">
+		<span id="e_password"></span>
+		<br>
+
+		<label for="password_r">Password ponovo</label>
+		<input type="password" id="password_r" placeholder="Unesi password ponovo">
+		<span id="e_password_r">Sifre se ne slazu</span>
+		<br>
+
+
+		<input type="reset" value="Resetuj">
+		<input type="button" value="Sracunaj" onclick="validacija();">
+
+	</form>
+</body>
+</html>
